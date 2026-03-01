@@ -3,4 +3,4 @@
 __pycache__
 .vscode
 *.pyc
-chatbot.py
+/src/chatbot.py
