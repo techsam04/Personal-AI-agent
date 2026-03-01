@@ -15,7 +15,7 @@ weather_function = {
             },
         },
         "required": ["location"],
-    },
+    }
 }
 def get_current_temperature(location):
         # Mock response for demo purposes
@@ -23,7 +23,7 @@ def get_current_temperature(location):
 tools = types.Tool(function_declarations=[weather_function])
 response = client.models.generate_content(
     model="gemini-2.5-flash",
-    contents="What is the current temperature in San Francisco?",
+    contents="What is the current temperature in Bangalore?",
     config=types.GenerateContentConfig(tools=[tools]),
 )
 
